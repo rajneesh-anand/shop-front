@@ -1,14 +1,7 @@
-
 const SENDGRID_API_URL = "https://api.sendgrid.com/v3/mail/send";
-const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+const SENDGRID_API_KEY = process.env.EMAIL_SERVER_PASSWORD;
 
-const sendMail = async (
-     recepient_email, // email_address to send mail
-     name_, // from name on email
-     subject,
-     client_message, // value we receive from our contact form
-     client_email // value we receive from our contact form
-) => {
+const sendMail = async (to, name, subject, message) => {
   const sgResponse = await fetch(SENDGRID_API_URL, {
     method: "POST",
     headers: {
@@ -20,7 +13,7 @@ const sendMail = async (
         {
           to: [
             {
-              email: recepient_email,
+              email: to,
             },
           ],
           subject: subject,
@@ -28,15 +21,12 @@ const sendMail = async (
       ],
       from: {
         email: "osho.ved@hotmail.com",
-        name: "YOUR NAME",
+        name: name,
       },
       content: [
         {
           type: "text/html",
-          value: `<strong>Client Name: ${name_} </strong> \n <p> 
-                  sent you a query regarding <strong>${subject} </strong></p>
-                  \n <p>Client's Message: <strong>${client_message}</strong><\p> 
-                  <p>Client's Email : <strong> ${client_email} </strong></p>`,
+          value: message,
         },
       ],
     }),

@@ -14,9 +14,9 @@ const Contact = () => {
           title="Contact | KokeLiko "
           canonical={process.env.PUBLIC_URL + "/contact"}
         />
-        <div className="wrapper home-default-wrapper">
+        <div className="wrapper">
           <Header classOption="hb-border" />
-          <div className="main-content">
+          <div className="container">
             <ContactContainer />
             {/* <MapContainer /> */}
           </div>

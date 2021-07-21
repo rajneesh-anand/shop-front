@@ -3,15 +3,15 @@
     "id": 1,
     "delay": "300",
     "title": "Contact Directly",
-    "icon": "icon_mail_alt",
-    "info": "<a href='mailto:contact@kokeliko.com'>demo@kokeliko.com</a><br /><a href='tel:0123456789'>0123456789</a>"
+    "icon": "",
+    "info": "<i class='fas fa-envelope'></i> <a href='mailto:contact@kokeliko.com'>demo@kokeliko.com</a><br /><i class='fas fa-phone-alt'></i> <a href='tel:0123456789'>0123456789</a>"
   },
   {
     "id": 2,
     "aos-delay": "600",
     "title": "Visit our office",
-    "icon": "icon_pin_alt",
-    "info": "<p>192 XXX Street, tel Aviv 90002, Israel</p>"
+    "icon": "",
+    "info": "<i class='fas fa-map-marker-alt'></i> <span>192 XXX Street, , Israel</span>"
   },
   {
     "id": 3,

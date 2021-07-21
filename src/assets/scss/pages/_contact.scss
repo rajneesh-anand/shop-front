@@ -39,9 +39,9 @@
 }
 
 .contact-info-content {
-	display: flex;
-	justify-content: space-between;
-	padding-bottom: 90px;
+	// display: flex;
+	// justify-content: space-between;
+	// padding-bottom: 90px;
 	@media #{$md-device} {
 		margin: 0 -15px;
 		padding-bottom: 70px;
@@ -57,6 +57,8 @@
 	.info-item {
 		max-width: 277px;
 		min-width: 277px;
+		margin-bottom: 16px;
+    border-bottom: 1px solid #ddd;
 		@media #{$md-device} {
 			min-width: auto;
 			padding: 0 15px;
@@ -72,18 +74,19 @@
 			width: 100%;
 		}
 		.info-title	{
-			align-items: center;
-			border-bottom: 1px solid #d3d6da;
-			display: flex;
-			justify-content: space-between;
-			line-height: 1;
-			margin-bottom: 22px;
-			padding-bottom: 9px;
+			// align-items: center;
+			// border-bottom: 1px solid #d3d6da;
+			// display: flex;
+			// justify-content: space-between;
+			// line-height: 1;
+			margin-bottom: 8px;
+			margin-top: 8px;
+    padding-bottom: 9px;
 			h4 {
 				color: $black;
 				font-family: $font-current-theme1;
 				font-size: 16px;
-				font-weight: $font-weight-bold;
+				font-weight: 500;
 				letter-spacing: 0;
 				line-height: 1;
 				margin-bottom: 0;
@@ -181,4 +184,8 @@
 	  height: 100%;
 	  width: 100%;
 	}
+}
+
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){
+	height: 192px;
 }

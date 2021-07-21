@@ -1,40 +1,76 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
 
 const ContactForm = () => {
+  const editorRef = useRef();
+  const [editorLoaded, setEditorLoaded] = useState(false);
+  const { CKEditor, ClassicEditor } = editorRef.current || {};
+  const [mailMessage, setMailMessage] = useState("");
+  const [message, setMessage] = useState();
+
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     mode: "onBlur",
   });
 
+  useEffect(() => {
+    editorRef.current = {
+      CKEditor: require("@ckeditor/ckeditor5-react").CKEditor,
+      ClassicEditor: require("@ckeditor/ckeditor5-build-classic"),
+    };
+    setEditorLoaded(true);
+    if (message !== "") {
+      toast.dark(message);
+    }
+  }, [message]);
+
   const onSubmit = async (data) => {
-    console.log(data);
+    const userInfo = {
+      name: data.name,
+      email: data.email,
+      subject: data.subject,
+      message: mailMessage,
+    };
 
     try {
       const result = await fetch("/api/contact", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify(userInfo),
       });
-      const message = await result.json();
-      console.log(message);
+      const res = await result.json();
+      if (res.message === "success") {
+        setMessage("Thank you for sending email , We will contact you shortly");
+        reset();
+        setMailMessage("");
+      }
     } catch (error) {
-      // toast error message. whatever you wish
+      setMessage("Sorry, We didn't receive your email !");
     }
   };
 
   return (
     <Fragment>
-      <form
-        className="contact-form-wrapper"
-        action="/api/contact"
-        method="POST"
-        onSubmit={handleSubmit(onSubmit)}
-      >
+      <form className="contact-form-wrapper" onSubmit={handleSubmit(onSubmit)}>
         <div className="row">
+          {message && (
+            <ToastContainer
+              position="top-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+            />
+          )}
           <div className="col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div className="form-group">
               <input
@@ -78,12 +114,28 @@ const ContactForm = () => {
           </div>
           <div className="col-md-12" data-aos="fade-up">
             <div className="form-group mb-0">
-              <textarea
-                rows="7"
-                placeholder="Your message here..."
-                {...register("message", { required: "Message is required" })}
-              ></textarea>
-              {errors.message && <p>{errors.message.message}</p>}
+              {editorLoaded ? (
+                <CKEditor
+                  editor={ClassicEditor}
+                  data={mailMessage}
+                  onReady={(editor) => {
+                    console.log("Editor is ready to use!", editor);
+                  }}
+                  onChange={(event, editor) => {
+                    editor.editing.view.change((writer) => {
+                      writer.setStyle(
+                        "height",
+                        "200px",
+                        editor.editing.view.document.getRoot()
+                      );
+                    });
+                    const data = editor.getData();
+                    setMailMessage(data);
+                  }}
+                />
+              ) : (
+                <p>editor..</p>
+              )}
             </div>
           </div>
           <div
