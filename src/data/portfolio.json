@@ -1,0 +1,912 @@
+[
+  {
+    "id": 1,
+    "homeImage": "img/portfolio/portfolio-1.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "homeImage": "img/portfolio/portfolio-2.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["popular", "nature"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "September 25th <br />2020",
+    "team": "Nindia H. - Editor <br />Kate E. - Photographer",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://yourwebsite.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "homeImage": "img/portfolio/portfolio-3.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["background", "old"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "September 25th <br />2020",
+    "team": "Nindia H. - Editor <br />Kate E. - Photographer",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://yourwebsite.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 4,
+    "homeImage": "img/portfolio/portfolio-4.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["sport", "design"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "September 25th <br />2020",
+    "team": "Nindia H. - Editor <br />Kate E. - Photographer",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://yourwebsite.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "homeImage": "img/portfolio/portfolio-5.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["human", "cities"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "September 25th <br />2020",
+    "team": "Nindia H. - Editor <br />Kate E. - Photographer",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://yourwebsite.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 6,
+    "homeImage": "img/portfolio/portfolio-7.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["colors", "human"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "September 25th <br />2020",
+    "team": "Nindia H. - Editor <br />Kate E. - Photographer",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://yourwebsite.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 7,
+    "homeImage": "img/portfolio/portfolio-8.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "September 25th <br />2020",
+    "team": "Nindia H. - Editor <br />Kate E. - Photographer",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://yourwebsite.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 8,
+    "homeImage": "img/portfolio/portfolio-6.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["popular", "nature"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "September 25th <br />2020",
+    "team": "Nindia H. - Editor <br />Kate E. - Photographer",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://yourwebsite.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 9,
+    "homeImage": "img/portfolio/portfolio-9.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["background", "old"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "September 25th <br />2020",
+    "team": "Nindia H. - Editor <br />Kate E. - Photographer",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://yourwebsite.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 10,
+    "homeImage": "img/portfolio/portfolio-10.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 11,
+    "homeImage": "img/portfolio/portfolio-11.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 12,
+    "homeImage": "img/portfolio/portfolio-12.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 13,
+    "homeImage": "img/portfolio/portfolio-13.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 14,
+    "homeImage": "img/portfolio/portfolio-14.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 15,
+    "homeImage": "img/portfolio/portfolio-15.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 16,
+    "homeImage": "img/portfolio/portfolio-16.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 17,
+    "homeImage": "img/portfolio/portfolio-17.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 18,
+    "homeImage": "img/portfolio/portfolio-18.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 19,
+    "homeImage": "img/portfolio/portfolio-19.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 20,
+    "homeImage": "img/portfolio/portfolio-20.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 21,
+    "homeImage": "img/portfolio/portfolio-21.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 22,
+    "homeImage": "img/portfolio/portfolio-22.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 23,
+    "homeImage": "img/portfolio/portfolio-23.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 24,
+    "homeImage": "img/portfolio/portfolio-24.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 25,
+    "homeImage": "img/portfolio/portfolio-25.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 26,
+    "homeImage": "img/portfolio/portfolio-26.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 27,
+    "homeImage": "img/portfolio/portfolio-27.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 28,
+    "homeImage": "img/portfolio/portfolio-28.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 29,
+    "homeImage": "img/portfolio/portfolio-29.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 30,
+    "homeImage": "img/portfolio/portfolio-30.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 31,
+    "homeImage": "img/portfolio/portfolio-31.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 32,
+    "homeImage": "img/portfolio/portfolio-32.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 33,
+    "homeImage": "img/portfolio/portfolio-33.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 34,
+    "homeImage": "img/portfolio/portfolio-34.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  },
+  {
+    "id": 35,
+    "homeImage": "img/portfolio/portfolio-35.jpg",
+    "title": "Victoria",
+    "excerpt": "Nature People Fashion Sea ",
+    "categories": ["featured", "new added"],
+    "client": "Archo Architecture <br />Bureau, SG",
+    "date": "June 06 <br />2021",
+    "team": "",
+    "services": "Natural, Studio, Commercial, <br />Portrait",
+    "body": [
+      "<p>Updated portraits of all Instrument employees for the new Instrument site. A unified look and background allows photos to mesh seamlessly online. To see it live check out:</p>",
+      ""
+    ],
+    "pageUrl": {
+      "text": "https://google.com",
+      "link": "/"
+    },
+    "gallery": {
+      "imageOne": "./img/portfolio/s1.jpg",
+      "imageTwo": "./img/portfolio/s2.jpg",
+      "imageThree": "./img/portfolio/s3.jpg",
+      "imageFour": "./img/portfolio/sv1.jpg",
+      "imageFive": "./img/portfolio/s4.jpg"
+    }
+  }
+]

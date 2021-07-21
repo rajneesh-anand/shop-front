@@ -1,0 +1,35 @@
+
+  {
+    "slider": [
+      {
+        "id": 1,
+        "img": "/img/hero-slider/hero1.jpg",
+        "title": "Explore Russia Nature Landscape",
+        "subTitle": "KokeLiko 2021",
+        "description": "Scenic landscape and places across Russia",
+        "buttonText": "Visit",
+        "to" :"/shop"
+      },
+      {
+        "id": 2,
+        "img": "/img/hero-slider/hero2.jpg",
+        "title": " Russia Nature Landscape",
+        "subTitle": "KokeLiko 2021",
+        "description": "Russialandscape and places across Russia",
+        "buttonText": "Explore",
+        "to" :"/shop"
+      
+      },
+      {
+        "id": 3,
+        "img": "/img/hero-slider/hero3.jpg",
+        "title": "Nature Landscape",
+        "subTitle": "KokeLiko 2021",
+        "description": " landscape and places across Russia",
+        "buttonText": "Find More",
+        "to" :"/shop"
+      }
+    ]
+  }
+ 
+
