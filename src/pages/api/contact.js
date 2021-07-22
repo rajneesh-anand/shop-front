@@ -6,7 +6,6 @@ sgMail.setApiKey(
 
 export default async (req, res) => {
   const { email, subject, message, name } = req.body;
-  console.log(req.body);
 
   const msg = {
     to: email,

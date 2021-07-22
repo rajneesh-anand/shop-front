@@ -55,7 +55,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Fragment>
+    <>
       <form className="contact-form-wrapper" onSubmit={handleSubmit(onSubmit)}>
         <div className="row">
           {message && (
@@ -151,7 +151,7 @@ const ContactForm = () => {
           </div>
         </div>
       </form>
-    </Fragment>
+    </>
   );
 };
 
