@@ -24,26 +24,26 @@ export const getServerSideProps = async ({ res }) => {
 
   const baseUrl = {
     development: "http://localhost:3000",
-    production: "https://kokeliko.vercel.app",
+    production: "https://gulshan.vercel.app",
   }[process.env.NODE_ENV];
 
   const staticPages = [
-    "https://kokeliko.vercel.app/about",
-    "https://kokeliko.vercel.app/contact",
-    "https://kokeliko.vercel.app/articles/spirituality",
-    "https://kokeliko.vercel.app/articles/yoga",
-    "https://kokeliko.vercel.app/articles/meditation",
-    "https://kokeliko.vercel.app/articles/travel",
-    "https://kokeliko.vercel.app/shop",
-    "https://kokeliko.vercel.app/photos",
-    "https://kokeliko.vercel.app/privacypolicy",
-    "https://kokeliko.vercel.app/termsofuse",
-    "https://kokeliko.vercel.app/user/newpost",
-    "https://kokeliko.vercel.app/user/account",
-    "https://kokeliko.vercel.app/user/product",
-    "https://kokeliko.vercel.app/user/upload/video",
-    "https://kokeliko.vercel.app/auth/signin",
-    "https://kokeliko.vercel.app/movie",
+    "https://gulshan.vercel.app/about",
+    "https://gulshan.vercel.app/contact",
+    "https://gulshan.vercel.app/articles/spirituality",
+    "https://gulshan.vercel.app/articles/yoga",
+    "https://gulshan.vercel.app/articles/meditation",
+    "https://gulshan.vercel.app/articles/travel",
+    "https://gulshan.vercel.app/shop",
+    "https://gulshan.vercel.app/photos",
+    "https://gulshan.vercel.app/privacypolicy",
+    "https://gulshan.vercel.app/termsofuse",
+    "https://gulshan.vercel.app/user/newpost",
+    "https://gulshan.vercel.app/user/account",
+    "https://gulshan.vercel.app/user/product",
+    "https://gulshan.vercel.app/user/upload/video",
+    "https://gulshan.vercel.app/auth/signin",
+    "https://gulshan.vercel.app/movie",
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

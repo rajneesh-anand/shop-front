@@ -1,7 +1,7 @@
 const isProd = process.env.NODE_ENV === "production";
 
 const assetPrefix = isProd
-  ? "https://kokeliko.vercel.app"
+  ? "https://gulshan.vercel.app"
   : "http://localhost:3000";
 
 module.exports = {

@@ -49,7 +49,7 @@ export default function SignIn({ csrfToken }) {
                       className="google"
                       onClick={() =>
                         signIn("google", {
-                          callbackUrl: "http://localhost:3000",
+                          callbackUrl: "https://gulshan.vercel.app",
                         })
                       }
                     >
@@ -63,7 +63,7 @@ export default function SignIn({ csrfToken }) {
                       className="facebook"
                       onClick={() =>
                         signIn("facebook", {
-                          callbackUrl: "https://kokeliko.vercel.app",
+                          callbackUrl: "https://gulshan.vercel.app",
                         })
                       }
                     >
