@@ -51,11 +51,11 @@ export default async function handler(req, res) {
       var post_data = JSON.stringify(paytmParams);
 
       var options = {
-        // // for Staging
-        // hostname: "securegw-stage.paytm.in",
+        // for Staging
+        hostname: "securegw-stage.paytm.in",
 
-        //for Production
-        hostname: "securegw.paytm.in",
+        // //for Production
+        // hostname: "securegw.paytm.in",
 
         port: 443,
         path: `/theia/api/v1/initiateTransaction?mid=${PaytmConfig.PaytmConfig.mid}&orderId=${orderId}`,
@@ -89,7 +89,7 @@ export default async function handler(req, res) {
         Name: name,
         Email: email,
         Contact: contact,
-        Address: JSON.stringify(address),
+        Address: address,
         Amount: JSON.parse(amount),
         Tax: JSON.parse(tax),
         ShippingCharge: JSON.parse(shipping),
