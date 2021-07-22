@@ -19,9 +19,16 @@ const ContactContainer = () => {
         <div
           className="text-center"
           data-aos="fade-up"
-          style={{ marginBottom: 32, background: "rebeccapurple" }}
+          style={{
+            marginBottom: 32,
+            background: "#31144e",
+            borderRadius: "5px",
+          }}
         >
-          <h3 className="title" style={{ color: "white", marginTop: 8 }}>
+          <h3
+            className="title"
+            style={{ color: "white", marginTop: 8, fontSize: "20px" }}
+          >
             How caw we help you ?
           </h3>
         </div>
