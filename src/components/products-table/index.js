@@ -19,7 +19,7 @@ const ProductsTable = ({ data }) => {
       <thead>
         <tr>
           <th></th>
-          <th>Photo</th>
+          <th>Product Image</th>
           <th>Product Name</th>
           <th>Quantity</th>
           <th>Amount</th>

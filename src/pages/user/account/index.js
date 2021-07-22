@@ -37,23 +37,17 @@ const Account = ({ orderData }) => {
         <div className="wrapper">
           <Header classOption="hb-border" />
           <div className="container">
-            <div className="row">
-              {/* <div className="col-lg-2 col-md-2 buttonList">
-                <div>
-                  <Link href="/user/orders">
-                    <div className="buttonCol">
-                      <a>Orders</a>
-                    </div>
-                  </Link>
-
-                  <Link href="/user/product">
-                    <div className="buttonCol">
-                      <a>Upload Product</a>
-                    </div>
-                  </Link>
-                </div>
-              </div> */}
-
+            <div
+              className="row"
+              style={{
+                marginTop: 40,
+                textAlign: "center",
+                borderBottom: "1px solid #ddd",
+              }}
+            >
+              <h6>Your Orders List</h6>
+            </div>
+            <div className="row" style={{ marginTop: 40 }}>
               <div className="col-lg-12 col-md-12 ">
                 {data ? (
                   <ProductsTable data={data} />
@@ -78,7 +72,12 @@ export const getServerSideProps = async ({ req, res }) => {
   const session = await getSession({ req });
 
   if (!session) {
-    return { props: { orderData: null } };
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
   }
 
   const orders = await prisma.orders.findMany({
