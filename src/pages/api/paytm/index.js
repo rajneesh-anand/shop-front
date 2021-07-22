@@ -29,7 +29,7 @@ export default async function handler(req, res) {
     mid: PaytmConfig.PaytmConfig.mid,
     websiteName: PaytmConfig.PaytmConfig.website,
     orderId: orderId,
-    callbackUrl: "https://gulshan.vercel.app/checkout",
+    callbackUrl: "http://localhost:3000/checkout",
     txnAmount: {
       value: total_amount,
       currency: "INR",

@@ -7,9 +7,9 @@ import Header from "../../../layouts/header";
 import Layout from "../../../layouts";
 import ProductsTable from "../../../components/products-table";
 import Loading from "../../../components/loading";
-
 import { useRouter } from "next/router";
 import Message from "../../../components/message";
+import prisma from "../../../lib/prisma";
 
 const Account = ({ orderData }) => {
   const data = JSON.parse(orderData).length != 0 ? JSON.parse(orderData) : null;
