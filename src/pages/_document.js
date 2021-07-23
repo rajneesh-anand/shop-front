@@ -16,6 +16,7 @@ class MyDocument extends Document {
             content="
             default-src 'self' 'unsafe-eval'  https://*.googleapis.com https://*.fontawesome.com https://*.gstatic.com https://www.google-analytics.com ; 
             style-src 'self' https://fonts.googleapis.com https://*.fontawesome.com https://*.paytm.in 'unsafe-inline'; 
+            font-src 'self' https://fonts.gstatic.com https://*.fontawesome.com;
             script-src 'self'  https://unpkg.com https://www.googletagmanager.com http://www.googletagmanager.com 'unsafe-inline' ;
             media-src *; img-src *; "
           />
