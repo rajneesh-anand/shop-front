@@ -84,7 +84,7 @@ export default async function handler(req, res) {
     post_req.end();
   });
 
-  function saveDataToDatabase(token) {
+  async function saveDataToDatabase(token) {
     console.log(`token - ${token}`);
     try {
       const result = await prisma.orders.create({
