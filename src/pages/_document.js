@@ -27,10 +27,15 @@ class MyDocument extends Document {
           `,
             }}
           />
-          {/* <link
+          <link
             href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"
             rel="stylesheet"
-          /> */}
+          />
+
+          <meta
+            https="Content-Security-Policy"
+            content="default-src data: 'self' fonts.googleapis.com fonts.gstatic.com; style-src-elem data: 'self' fonts.googleapis.com fonts.gstatic.com;"
+          />
 
           <script
             type="text/javascript"

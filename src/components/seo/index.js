@@ -10,10 +10,6 @@ const SEO = ({ title, description, canonical, css, js, image }) => (
       name="viewport"
       content="width=device-width,minimum-scale=1,initial-scale=1"
     />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; font-src 'self' https://fonts.gstatic.com/; style-src 'self' https://fonts.googleapis.com/ 'unsafe-inline';"
-    />
 
     <meta name="og:type" property="og:type" content="website" />
     <meta name="og:image" property="og:image" content="/og.png" />
