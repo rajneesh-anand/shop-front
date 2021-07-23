@@ -13,7 +13,7 @@ const Hiddenfrom = ({ formData }) => {
     <form
       id="redFrom"
       method="post"
-      action={`https://securegw-stage.paytm.in/theia/api/v1/showPaymentPage?mid=${formData.mid}&orderId=${formData.orderId}`}
+      action={`https://securegw.paytm.in/theia/api/v1/showPaymentPage?mid=${formData.mid}&orderId=${formData.orderId}`}
       name="paytm"
     >
       <input type="hidden" name="mid" value={formData.mid} />
