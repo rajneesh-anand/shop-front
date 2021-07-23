@@ -74,6 +74,7 @@ export default async function handler(req, res) {
 
         post_res.on("end", function () {
           response = JSON.parse(response);
+          console.log(response);
           txnToken = response.body.txnToken;
           // res.status(200).json({ txnToken: txnToken, orderId: orderId });
         });
