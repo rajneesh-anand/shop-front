@@ -104,7 +104,7 @@ const CheckoutForm = () => {
       const orderResponse = await order.json();
       console.log(orderResponse);
       setPaytmData({
-        mid: "zWEMTK89662017572077",
+        mid: "WJjFco25285429194621",
         orderId: orderResponse.orderId,
         txnToken: orderResponse.txnToken,
       });
