@@ -53,9 +53,9 @@ const Account = ({ orderData }) => {
                   <ProductsTable data={data} />
                 ) : (
                   <Message
-                    title="You have placed no order !"
+                    title="You have not purchased any product !"
                     url="/"
-                    btnText="Place an Order"
+                    btnText=" Buy Now"
                   />
                 )}
               </div>

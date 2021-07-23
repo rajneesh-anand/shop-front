@@ -24,14 +24,16 @@ function Profile() {
             <ul className="profile-buttons">
               <li>
                 <Link href="/user/account">
-                  <a className="btn btn-outline-dark btn-sm">My Account</a>
+                  <a className="btn btn-outline-dark btn-sm">My Orders</a>
                 </Link>
               </li>
               <li>
                 <button
                   type="button"
                   className="btn btn-outline-danger btn-sm"
-                  onClick={() => signOut()}
+                  onClick={() =>
+                    signOut({ callbackUrl: "https://gulshan.vercel.app" })
+                  }
                 >
                   Sign Out
                 </button>

@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     total_amount,
     product_details,
   } = req.body;
-  var txnToken;
+
   var orderDate = new Date();
   var orderId = `POID${orderDate.getFullYear()}${
     orderDate.getMonth() + 1
