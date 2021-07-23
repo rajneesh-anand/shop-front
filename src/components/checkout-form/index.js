@@ -9,11 +9,12 @@ import Card from "react-bootstrap/Card";
 // Paytm Node Integration
 
 const Hiddenfrom = ({ formData }) => {
+  console.log(formData);
   return (
     <form
       id="redFrom"
       method="post"
-      action={`https://securegw.paytm.in/theia/api/v1/showPaymentPage?mid=${formData.mid}&orderId=${formData.orderId}`}
+      // action={`https://securegw.paytm.in/theia/api/v1/showPaymentPage?mid=${formData.mid}&orderId=${formData.orderId}`}
       name="paytm"
     >
       <input type="hidden" name="mid" value={formData.mid} />
