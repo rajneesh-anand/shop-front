@@ -4,7 +4,8 @@ import { useForm } from "react-hook-form";
 import { useSession } from "next-auth/client";
 import { useCart } from "../../contexts/cart/use-cart";
 import { stateOptions, countryOptions } from "../../constant/shipping";
-
+import { CURRENCY } from "../../constant/currency";
+import Card from "react-bootstrap/Card";
 // Paytm Node Integration
 
 const Hiddenfrom = ({ formData }) => {
@@ -123,161 +124,236 @@ const CheckoutForm = () => {
         className="payment-form"
       >
         <div className="row">
-          <div className="col-sm-8 col-md-8 col-lg-8">
-            <p>Shipping Details</p>
-            <div className="row">
-              <div className="col-sm-8 col-md-8 col-lg-8">
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    type="text"
-                    placeholder="Enter Your Full Name"
-                    {...register("name", {
-                      required: "Name is required",
-                    })}
-                  />
-                  {errors.name && <p>{errors.name.message}</p>}
-                </div>
-              </div>
-              <div className="col-sm-4 col-md-4 col-lg-4">
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    type="text"
-                    placeholder="Contact Number"
-                    {...register("contact", {
-                      required: "Contact Number is required",
-                    })}
-                  />
-                  {errors.contact && <p>{errors.contact.message}</p>}
-                </div>
-              </div>
-            </div>
-            <div className="form-group">
-              <input
-                className="form-control"
-                type="text"
-                placeholder="Address"
-                {...register("address", {
-                  required: "Address is required",
-                })}
-              />
-              {errors.address && <p>{errors.address.message}</p>}
-            </div>
-            <div className="row">
-              <div className="col-6">
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    type="text"
-                    placeholder="City"
-                    {...register("city", {
-                      required: "City is required",
-                    })}
-                  />
-                  {errors.city && <p>{errors.city.message}</p>}
-                </div>
-              </div>
+          <div className="col-sm-8 col-md-8 col-lg-8 ">
+            <Card>
+              <Card.Body>
+                <Card.Subtitle className="mb-2 ">
+                  Shipping Address
+                </Card.Subtitle>
 
-              <div className="col-6">
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    id="zip"
-                    type="text"
-                    placeholder="Postal Code"
-                    {...register("zip", {
-                      required: "Pin Code is required",
-                    })}
-                  />
-                  {errors.zip && <p>{errors.zip.message}</p>}
+                <div className="row">
+                  <div className="col-sm-8 col-md-8 col-lg-8">
+                    <div className="form-group">
+                      <input
+                        className="form-control"
+                        type="text"
+                        placeholder="Enter Your Full Name"
+                        {...register("name", {
+                          required: "Name is required",
+                        })}
+                      />
+                      {errors.name && <p>{errors.name.message}</p>}
+                    </div>
+                  </div>
+                  <div className="col-sm-4 col-md-4 col-lg-4">
+                    <div className="form-group">
+                      <input
+                        className="form-control"
+                        type="text"
+                        placeholder="Contact Number"
+                        {...register("contact", {
+                          required: "Contact Number is required",
+                          pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: "Accepts only numbers",
+                          },
+                        })}
+                      />
+                      {errors.contact && <p>{errors.contact.message}</p>}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-6">
-                <div className="form-group">
-                  <select
-                    {...register("state", { required: true })}
-                    className="form-select"
-                    aria-label="Default select example"
-                    onChange={findShippingCharge}
-                  >
-                    <option value="Select State">Select State</option>
-                    {stateOptions.map((item, i) => (
-                      <option key={i} value={item.value}>
-                        {item.text}
-                      </option>
-                    ))}
-                  </select>
+                <div className="row">
+                  <div className="col-12">
+                    <div className="form-group">
+                      <input
+                        className="form-control"
+                        type="text"
+                        placeholder="Address"
+                        {...register("address", {
+                          required: "Address is required",
+                        })}
+                      />
+                      {errors.address && <p>{errors.address.message}</p>}
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="col-6">
-                <div className="form-group">
-                  <select
-                    {...register("country", { required: true })}
-                    className="form-select"
-                    aria-label="Default select example"
-                    defaultValue="IN"
-                  >
-                    {countryOptions.map((item, i) => (
-                      <option key={i} value={item.value}>
-                        {item.text}
-                      </option>
-                    ))}
-                  </select>
+                <div className="row">
+                  <div className="col-6">
+                    <div className="form-group">
+                      <input
+                        className="form-control"
+                        type="text"
+                        placeholder="City"
+                        {...register("city", {
+                          required: "City is required",
+                        })}
+                      />
+                      {errors.city && <p>{errors.city.message}</p>}
+                    </div>
+                  </div>
+
+                  <div className="col-6">
+                    <div className="form-group">
+                      <input
+                        className="form-control"
+                        id="zip"
+                        type="text"
+                        placeholder="Postal Code"
+                        {...register("zip", {
+                          required: "Pin Code is required",
+                        })}
+                      />
+                      {errors.zip && <p>{errors.zip.message}</p>}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+                <div className="row">
+                  <div className="col-6">
+                    <div className="form-group">
+                      <select
+                        {...register("state", { required: true })}
+                        className="form-select"
+                        aria-label="Default select example"
+                        onChange={findShippingCharge}
+                      >
+                        <option value="Select State">Select State</option>
+                        {stateOptions.map((item, i) => (
+                          <option key={i} value={item.value}>
+                            {item.text}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+                  <div className="col-6">
+                    <div className="form-group">
+                      <select
+                        {...register("country", { required: true })}
+                        className="form-select"
+                        aria-label="Default select example"
+                        defaultValue="IN"
+                      >
+                        {countryOptions.map((item, i) => (
+                          <option key={i} value={item.value}>
+                            {item.text}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </Card.Body>
+            </Card>
           </div>
           <div className="col-sm-4 col-md-4 col-lg-4">
-            {items.map((item) => (
-              <div key={item.id}>
-                <div
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
-                  <h6>{item.name}</h6>
-                  <h4>{(item.quantity * item.price).toFixed(2)}</h4>
-                </div>
-                {item.gst > 0 && (
+            <Card>
+              <Card.Body>
+                <Card.Subtitle className="mb-2">Order Details</Card.Subtitle>
+
+                {items.map((item) => (
                   <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
+                    key={item.id}
+                    style={{
+                      width: "100%",
+                      borderTop: "1px solid #ddd",
+                      paddingTop: 8,
+                    }}
                   >
-                    <h6>TAX</h6>
-                    <h4>
-                      {(item.quantity * item.price * (item.gst / 100)).toFixed(
-                        2
-                      )}
-                    </h4>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <h6>{item.name}</h6>
+                      <h6>
+                        {CURRENCY.INR}
+                        {(item.quantity * item.price).toFixed(2)}
+                      </h6>
+                    </div>
+                    {item.gst > 0 && (
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          width: "100%",
+                        }}
+                      >
+                        <h6>Gst @ {item.gst} %</h6>
+                        <h6>
+                          {CURRENCY.INR}
+                          {(
+                            item.quantity *
+                            item.price *
+                            (item.gst / 100)
+                          ).toFixed(2)}
+                        </h6>
+                      </div>
+                    )}
+                  </div>
+                ))}
+                {shipping > 0 && (
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      marginTop: 8,
+                      borderTop: "1px solid #ddd",
+                      paddingTop: 8,
+                      width: "100%",
+                    }}
+                  >
+                    <h6>Shipping Charge</h6>
+                    <h6>
+                      {CURRENCY.INR}
+                      {shipping.toFixed(2)}
+                    </h6>
                   </div>
                 )}
-              </div>
-            ))}
-            {shipping > 0 && (
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <h6>Shipping Charge</h6>
-                <h4>{shipping.toFixed(2)}</h4>
-              </div>
-            )}
-            {total > 0 && (
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <h6>Total</h6>
-                <h4>{total}</h4>
-              </div>
-            )}
+
+                {total > 0 && (
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      marginTop: 8,
+                      borderTop: "1px solid #ddd",
+                      paddingTop: 8,
+                      width: "100%",
+                    }}
+                  >
+                    <h6>Total Amount</h6>
+                    <h6>
+                      {CURRENCY.INR}
+                      {total}
+                    </h6>
+                  </div>
+                )}
+
+                <div
+                  className="text-center"
+                  style={{
+                    marginTop: 8,
+                    borderTop: "1px solid #ddd",
+                    paddingTop: 8,
+                    width: "100%",
+                  }}
+                >
+                  <button
+                    className="blue-button"
+                    type="submit"
+                    disabled={isProcessing}
+                  >
+                    {isProcessing ? "Processing..." : ` Place Order `}
+                  </button>
+                </div>
+              </Card.Body>
+            </Card>
 
             {orderSavedTodatabase ? (
               <div style={{ color: "red" }}>{orderSavedTodatabase}</div>
             ) : null}
-            <div className="text-center">
-              <button
-                className="blue-button"
-                type="submit"
-                disabled={isProcessing}
-              >
-                {isProcessing ? "Processing..." : `PAY`}
-              </button>
-            </div>
           </div>
         </div>
       </form>

@@ -289,12 +289,16 @@
 
 .payment-form {
   margin-top: 10px;
-  p {
-    color: #002e5b;
-    margin-bottom: 8px;
-  }
+
+ 
+ 
+  // p {
+  //   color: #002e5b;
+  //   margin-bottom: 8px;
+  // }
   .form-group {
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
+    min-height: 64px;
     @media #{$sm-device} {
       margin-bottom: 15px;
     }

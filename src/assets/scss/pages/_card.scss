@@ -1,6 +1,6 @@
 .card {
-  margin: 10px;
-  background-color: #fff;
+  // margin: 10px;
+  // background-color: rgb(172, 160, 160);
   // border-radius: 10px;
   // box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -25,12 +25,12 @@
   object-fit: cover;
 }
 .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
   align-items: flex-start;
   padding: 12px;
-  min-height: 250px;
+  min-height: 305px;
   .card-user{
     display: flex;
     width: 100%;
@@ -107,10 +107,10 @@
   background-color: #cd5b9f;
 }
 
-.card-body p {
-  font-size: 13px;
-  margin: 8px 0 35px;
-}
+// .card-body p {
+//   font-size: 13px;
+//   margin: 8px 0 35px;
+// }
 
 .user {
   display: flex;
