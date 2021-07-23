@@ -11,7 +11,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <link rel="icon" href="/fav.png" />
-          <meta
+          {/* <meta
             httpEquiv="Content-Security-Policy"
             content="
             default-src 'self' 'unsafe-eval'  https://*.googleapis.com https://*.fontawesome.com https://*.gstatic.com https://www.google-analytics.com ; 
@@ -19,7 +19,7 @@ class MyDocument extends Document {
             font-src 'self' https://fonts.gstatic.com https://*.fontawesome.com;
             script-src 'self'  https://unpkg.com https://www.googletagmanager.com http://www.googletagmanager.com 'unsafe-inline' ;
             media-src *; img-src *; "
-          />
+          /> */}
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id='G-93NWLELNJZ'`}
