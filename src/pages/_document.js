@@ -15,7 +15,7 @@ class MyDocument extends Document {
             http-equiv="Content-Security-Policy"
             content="
             default-src 'self' 'unsafe-eval'  https://*.googleapis.com/ https://*.fontawesome.com/ https://*.gstatic.com https://www.google-analytics.com/ ; 
-            style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://*.fontawesome.com/ ; 
+            style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://*.fontawesome.com/ https://*.paytm.in ; 
             script-src 'self' 'unsafe-inline' https://unpkg.com/ https://www.googletagmanager.com/ ;
             media-src *; img-src *; "
           />
