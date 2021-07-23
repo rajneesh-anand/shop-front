@@ -60,6 +60,7 @@ model Product {
   minimumQuantity Int?
   usage String?
   inStock Boolean @default(true) 
+  createdAt     DateTime  @default(now()) 
 }
 
 
