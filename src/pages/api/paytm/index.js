@@ -105,7 +105,7 @@ export default async function handler(req, res) {
           customer: { connect: { email: email } },
         },
       });
-      console.log(`txnToken -- ${token}`);
+
       return res.status(200).json({
         msg: "success",
         data: result,
