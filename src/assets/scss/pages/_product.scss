@@ -164,7 +164,7 @@
   .product-card {
     width: 100%;
     position: relative;
-    box-shadow: 0 2px 7px #dfdfdf;
+    box-shadow: 0 2px 7px #a39a9a;
     margin: 8px auto;
     background: #fafafa;
 
@@ -190,8 +190,15 @@
 
         img {
           width: 100%;
-          height: 184px;
+          height: 192px;
           border-radius: 5px;
+
+          @media #{$xs-device} {
+            height: 208px;
+          }
+          @media #{$xxs-device} {
+            height: 208px;
+          }
         }
       }
 

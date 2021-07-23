@@ -9,7 +9,16 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta charSet="utf-8" />
           <link rel="icon" href="/fav.png" />
+          <meta
+            http-equiv="Content-Security-Policy"
+            content="
+            default-src 'self' 'unsafe-eval'  https://*.googleapis.com/ https://*.fontawesome.com/ https://*.gstatic.com https://www.google-analytics.com/ ; 
+            style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://*.fontawesome.com/ ; 
+            script-src 'self' 'unsafe-inline' https://unpkg.com/ https://www.googletagmanager.com/ ;
+            media-src *; img-src *; "
+          />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id='G-93NWLELNJZ'`}
@@ -30,11 +39,6 @@ class MyDocument extends Document {
           <link
             href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"
             rel="stylesheet"
-          />
-
-          <meta
-            https="Content-Security-Policy"
-            content="default-src data: 'self' fonts.googleapis.com fonts.gstatic.com; style-src-elem data: 'self' fonts.googleapis.com fonts.gstatic.com;"
           />
 
           <script
