@@ -13,7 +13,7 @@ const Hiddenfrom = ({ formData }) => {
   return (
     <form
       id="redFrom"
-      method="post"
+      // method="post"
       // action={`https://securegw.paytm.in/theia/api/v1/showPaymentPage?mid=${formData.mid}&orderId=${formData.orderId}`}
       name="paytm"
     >
@@ -358,7 +358,7 @@ const CheckoutForm = () => {
           </div>
         </div>
       </form>
-      <Hiddenfrom formData={paytmData} />
+      {/* <Hiddenfrom formData={paytmData} /> */}
     </>
   );
 };
