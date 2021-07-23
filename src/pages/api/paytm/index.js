@@ -39,82 +39,86 @@ export default async function handler(req, res) {
       mobile: contact,
     },
   };
-  try {
-    PaytmChecksum.generateSignature(
-      JSON.stringify(paytmParams.body),
-      PaytmConfig.PaytmConfig.key
-    ).then(function (checksum) {
-      paytmParams.head = {
-        signature: checksum,
-      };
 
-      var post_data = JSON.stringify(paytmParams);
+  PaytmChecksum.generateSignature(
+    JSON.stringify(paytmParams.body),
+    PaytmConfig.PaytmConfig.key
+  ).then(function (checksum) {
+    paytmParams.head = {
+      signature: checksum,
+    };
 
-      var options = {
-        // // for Staging
-        // hostname: "securegw-stage.paytm.in",
+    var post_data = JSON.stringify(paytmParams);
 
-        //for Production
-        hostname: "securegw.paytm.in",
+    var options = {
+      // // for Staging
+      // hostname: "securegw-stage.paytm.in",
 
-        port: 443,
-        path: `/theia/api/v1/initiateTransaction?mid=${PaytmConfig.PaytmConfig.mid}&orderId=${orderId}`,
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Content-Length": post_data.length,
-        },
-      };
+      //for Production
+      hostname: "securegw.paytm.in",
 
-      var response = "";
-      var post_req = https.request(options, function (post_res) {
-        post_res.on("data", function (chunk) {
-          response += chunk;
-        });
+      port: 443,
+      path: `/theia/api/v1/initiateTransaction?mid=${PaytmConfig.PaytmConfig.mid}&orderId=${orderId}`,
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Content-Length": post_data.length,
+      },
+    };
 
-        post_res.on("end", function () {
-          response = JSON.parse(response);
-          console.log(response);
-          txnToken = response.body.txnToken;
-          // res.status(200).json({ txnToken: txnToken, orderId: orderId });
-        });
+    var response = "";
+    var post_req = https.request(options, function (post_res) {
+      post_res.on("data", function (chunk) {
+        response += chunk;
       });
 
-      post_req.write(post_data);
-      post_req.end();
+      post_res.on("end", function () {
+        response = JSON.parse(response);
+        console.log(response);
+        txnToken = response.body.txnToken;
+        saveDataToDatabase(txnToken);
+      });
     });
 
-    const result = await prisma.orders.create({
-      data: {
-        OrderNumber: orderId,
-        Name: name,
-        Email: email,
-        Contact: contact,
-        Address: address,
-        Amount: JSON.parse(amount),
-        Tax: JSON.parse(tax),
-        ShippingCharge: JSON.parse(shipping),
-        TotalProducts: total_products,
-        TotalAmount: JSON.parse(total_amount),
-        ProductDetails: product_details,
-        PaymentStatus: "Pending",
-        OrderStatus: "Pending",
-        customer: { connect: { email: email } },
-      },
-    });
-    console.log(`txnToken -- ${txnToken}`);
-    return res.status(200).json({
-      msg: "success",
-      data: result,
-      txnToken: txnToken,
-      orderId: orderId,
-    });
-  } catch (error) {
-    console.log(error);
-    return res.status(500).send(error);
-  } finally {
-    async () => {
-      await prisma.$disconnect();
-    };
+    post_req.write(post_data);
+    post_req.end();
+  });
+
+  function saveDataToDatabase(token) {
+    console.log(`token - ${token}`);
+    try {
+      const result = await prisma.orders.create({
+        data: {
+          OrderNumber: orderId,
+          Name: name,
+          Email: email,
+          Contact: contact,
+          Address: address,
+          Amount: JSON.parse(amount),
+          Tax: JSON.parse(tax),
+          ShippingCharge: JSON.parse(shipping),
+          TotalProducts: total_products,
+          TotalAmount: JSON.parse(total_amount),
+          ProductDetails: product_details,
+          PaymentStatus: "Pending",
+          OrderStatus: "Pending",
+          customer: { connect: { email: email } },
+        },
+      });
+      console.log(`txnToken -- ${token}`);
+      return res.status(200).json({
+        msg: "success",
+        data: result,
+        txnToken: token,
+        orderId: orderId,
+      });
+    } catch (error) {
+      console.log(error);
+      return res.status(500).send(error);
+    } finally {
+      async () => {
+        await prisma.$disconnect();
+      };
+    }
   }
 }
