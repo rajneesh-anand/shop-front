@@ -31,7 +31,7 @@ export default function SignIn({ csrfToken }) {
     !session && (
       <Layout>
         <SEO
-          title="Sign In | KokeLiko"
+          title="Sign In | Gulshan Shop"
           canonical={`${process.env.PUBLIC_URL}/auth/signin`}
         />
         <div className="wrapper">
@@ -41,7 +41,7 @@ export default function SignIn({ csrfToken }) {
               <div className="col-md-6 col-lg-6">
                 <div className="signBlock">
                   <div className="commonStyle">
-                    <p>SignIn KokeLiko</p>
+                    <p>Sign In Gulshan Shop</p>
                   </div>
 
                   <div className="commonStyle">
@@ -96,7 +96,7 @@ export default function SignIn({ csrfToken }) {
                   </form>
                   <div className="text-center">
                     <p>
-                      By Login, you agree to KokeLiko
+                      By Login, you agree to Gulshan Shop
                       <a
                         href={process.env.PUBLIC_URL + "/termsofuse"}
                         target="_blank"
